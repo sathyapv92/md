@@ -2,12 +2,18 @@
 
 
 
-<app-dialog></app-dialog>
-<app-test-dialog></app-test-dialog>
+  <app-dialog></app-dialog>
+  <app-test-dialog></app-test-dialog>
 </div>
 <div [ngBusy]="busy"></div>
 <mat-form-field class="example-full-width">
-    <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" placeholder="Choose a date">
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
+  <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+<input type="text" name="example" list="exampleList">
+<datalist id="exampleList">
+  <option value="A">
+    <option value="B">
+</datalist>
